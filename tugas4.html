@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self Care Club</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#e9d7d7;
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.container{
+    width:900px;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    border-bottom:1px solid #eee;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+}
+
+/* HERO */
+.hero{
+    background:#d9878d;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:50px;
+}
+
+.hero-text h1{
+    font-size:58px;
+    line-height:1.1;
+    font-family: Georgia, serif;
+}
+
+.hero-text p{
+    margin-bottom:15px;
+}
+
+.hero img{
+    width:300px;
+    border-radius:10px;
+}
+
+/* SECTION */
+section{
+    padding:50px;
+}
+
+section h2{
+    font-size:34px;
+    margin-bottom:30px;
+    font-family: Georgia, serif;
+}
+
+/* PRODUCT */
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    border:1px solid #eee;
+    padding:15px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.card h4{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.card p{
+    color:#777;
+    font-size:14px;
+}
+
+.price{
+    margin-top:10px;
+    font-weight:bold;
+    color:#d9878d;
+}
+
+/* PROMO */
+.promo{
+    background:#d9878d;
+    color:white;
+}
+
+.promo-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+}
+
+.big-box, .small-box{
+    background:#f3c6ca;
+    padding:30px;
+    min-height:180px;
+    color:#333;
+    font-weight:bold;
+}
+
+.small-stack{
+    display:grid;
+    gap:20px;
+}
+
+/* FOOTER */
+footer{
+    padding:30px 50px;
+    background:#fafafa;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+footer div{
+    margin-bottom:15px;
+}
+
+footer h4{
+    margin-bottom:10px;
+}
+
+footer a{
+    display:block;
+    text-decoration:none;
+    color:#555;
+    margin-bottom:5px;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <div class="logo">SELF CARE CLUB</div>
+    <nav>
+        <a href="#">Skincare</a>
+        <a href="#">Body Care</a>
+        <a href="#">Paket</a>
+        <a href="#">Promo</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <p>Kamu pantas mendapatkan perawatan terbaik</p>
+        <h1>SELF CARE<br>CLUB</h1>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500" alt="model">
+</div>
+
+<!-- PRODUCTS -->
+<section>
+    <h2>Produk Baru</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500">
+            <h4>Moisturizer</h4>
+            <p>Hydrating Cream</p>
+            <div class="price">Rp130.000</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1601612628452-9e99ced43524?w=500">
+            <h4>Face Mask</h4>
+            <p>Clay Detox</p>
+            <div class="price">Rp145.000</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500">
+            <h4>Serum</h4>
+            <p>Vitamin C</p>
+            <div class="price">Rp170.000</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=500">
+            <h4>Oil Drops</h4>
+            <p>Glow Booster</p>
+            <div class="price">Rp190.000</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+    <h2>Promo</h2>
+
+    <div class="promo-grid">
+
+        <div class="big-box">
+            Beli 2 produk skincare, gratis sheet mask premium
+             <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=500">
+        </div>
+
+        <div class="small-stack">
+            <div class="small-box">Diskon 30% Serum</div>
+            <div class="small-box">Gratis Ongkir</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<div>
+    <h4>SELF CARE CLUB</h4>
+    <p>Beauty & wellness terbaik</p>
+</div>
+
+<div>
+    <h4>Menu</h4>
+    <a href="#">Skincare</a>
+    <a href="#">Body Care</a>
+    <a href="#">Promo</a>
+</div>
+
+<div>
+    <h4>Kontak</h4>
+    <a href="#">Instagram</a>
+    <a href="#">Whatsapp</a>
+    <a href="#">Email</a>
+</div>
+
+</footer>
+
+</div>
+
+</body>
+</html>
